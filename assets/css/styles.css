@@ -102,7 +102,7 @@ ul {
 }
 
 a {
-    text-emphasis: none;
+    text-decoration: none;
 }
 
 img {
@@ -116,7 +116,25 @@ img {
 .section-title {
     font-size: var(--h1-font-size);
 }
+.section-sudtitle {
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
+}
+.section-title,
+.section-sudtitle {
+    text-align: center;
+}
 
+.container {
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+.grid {
+    display: grid;
+    gap: 1.5rem;
+ }
 /*==================== LAYOUT ====================*/
 
 
