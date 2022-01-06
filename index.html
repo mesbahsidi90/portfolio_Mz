@@ -15,6 +15,11 @@
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <!--==================== Google Fonts ====================-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Responsive Portfolio Website</title>
   </head>
@@ -22,41 +27,46 @@
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav-logo">MesbahZin</a>
+        <a href="#" class="nav_logo">MesbahZin</a>
         <div class="nav_menu" id="nav-menu">
           <ul class="nav_list grid">
             <li class="nav_item">
               <a href="#home" class="nav_link">
-                <i class="uil uil-estate"></i> Home
+                <i class="uil uil-estate nav_icon"></i> Home
               </a>
             </li>
             <li class="nav_item">
               <a href="#about" class="nav_link">
-                <i class="uil uil-user"></i> About
+                <i class="uil uil-user nav_icon"></i> About
               </a>
             </li>
             <li class="nav_item">
               <a href="#skills" class="nav_link">
-                <i class="uil uil-file-alt"></i> Skills
+                <i class="uil uil-file-alt nav_icon"></i> Skills
               </a>
             </li>
             <li class="nav_item">
               <a href="#section" class="nav_link">
-                <i class="uil uil-briefcase"></i> Services
+                <i class="uil uil-briefcase nav_icon"></i> Services
               </a>
             </li>
             <li class="nav_item">
               <a href="#porfolio" class="nav_link">
-                <i class="uil uil-scenery"></i> Portfolio
+                <i class="uil uil-scenery nav_icon"></i> Portfolio
               </a>
             </li>
             <li class="nav_item">
               <a href="#contact" class="nav_link">
-                <i class="uil uil-message"></i> Contactme
+                <i class="uil uil-message nav_icon"></i> Contactme
               </a>
             </li>
           </ul>
           <i class="uil uil-times nav_close" id="nav-close"></i>
+        </div>
+        <div class="nav_btns">
+          <div class="nav_toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
         </div>
       </nav>
     </header>
@@ -64,7 +74,75 @@
     <!--==================== MAIN ====================-->
     <main class="main">
       <!--==================== HOME ====================-->
-      <section class="home section" id="home"></section>
+      <section class="home section" id="home">
+        <div class="home_container container grid" id="home_container">
+          <div class="home_contant grid">
+            <div class="home_social">
+              <a
+                href="https://www.linkedin.com/in/mesbah-sidi-89a849165/"
+                class="home_social-icon"
+                target="_blank"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a href="#" class="home_social-icon" target="_blank">
+                <i class="uil uil-dribbble"></i>
+              </a>
+              <a
+                href="https://github.com/mesbahsidi90"
+                class="home_social-icon"
+                target="_blank"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+            </div>
+            <div class="home_img">
+              <svg
+                class="home_bolde"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image class="home_bold-img" href="assets/img/aboutmi.png" />
+                </g>
+              </svg>
+            </div>
+            <div class="home_data">
+              <h1 class="home_title">Hi, I'am Mesbah</h1>
+              <h3 class="home_subtitle">Frontend developer</h3>
+              <p class="home_description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ducimus, mollitia!
+              </p>
+              <a href="#contact" class="button button-flex">
+                Contact Me<i class="uil uil-message button_icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="home_scroll">
+            <a href="#about" class="home_scroll-button button-flex">
+              <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+              <span class="home_scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home_scroll-down"></i>
+            </a>
+          </div>
+        </div>
+      </section>
 
       <!--==================== ABOUT ====================-->
       <section class="about section" id="about"></section>
@@ -97,7 +175,7 @@
     <!--==================== SCROLL TOP ====================-->
 
     <!--==================== SWIPER JS ====================-->
-    <script src=""></script>
+    <script src="assets/js/main.js"></script>
 
     <!--==================== MAIN JS ====================-->
     <script src=""></script>
