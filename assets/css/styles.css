@@ -622,15 +622,93 @@ img {
     justify-self: center;
 }
 
-/*==================== TESTIMONIAL ====================*/
-
-
 /*==================== CONTACT ME ====================*/
+.contact_container{
+    row-gap: 3rem;
+}
+.contact_information{
+    display: flex;
+    margin-bottom: var(--mb-2);
+}
+.contact_icon{
+    font-size: 2rem;
+    color: var(--first-color);
+    margin-right: var(--mb-0-75);
+}
+.contact_title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+.contact_subtitle{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+.contact_contact{
+    background-color: var(--input-color);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem 0.25rem;
+}
 
+.contact_label{
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+}
+.contact_input {
+    width: 100%;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+    border: none;
+    outline: none;
+    padding: 0.25rem 0.5rem 0.5rem 0;
+}
 
 /*==================== FOOTER ====================*/
-
-
+.footer {
+    padding-top: 2rem;
+}
+.footer_container {
+    row-gap: 3.5rem;
+}
+.footer_bg {
+    background-color: var(--first-color-second);
+    padding: 2rem 0 3rem;
+}
+.footer_title {
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+.footer_subtitle {
+    font-size: var(--small-font-size);
+}
+.footer_links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+.footer_link:hover{
+    color: var(--first-color-lighter);
+}
+.footer_social{
+    font-size: 1.25rem;
+    margin-right: var(--mb-1-5);
+}
+.footer_social:hover{
+    color: var(--first-color-lighter);
+}
+.footer_copy {
+    font-size: var(--small-font-size);
+    text-align: center;
+    color: var(--text-color-light);
+    margin-bottom: var(--mb-3);
+}
+.footer_title,
+.footer_subtitle,
+.footer_link,
+.footer_social{
+    color: #fff;
+}
 /*========== SCROLL UP ==========*/
 
 
