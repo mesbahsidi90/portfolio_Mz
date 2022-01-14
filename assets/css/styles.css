@@ -996,4 +996,9 @@ img {
     .contact_input {
         grid-template-columns: repeat(2, 1fr);
     }
+    .footer_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
