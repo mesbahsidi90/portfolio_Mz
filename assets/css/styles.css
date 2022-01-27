@@ -188,6 +188,9 @@ img {
 .nav_toggle:hover {
     color: var(--first-color);
 }
+.nav_logo span {
+    color: var(--first-color);
+}
 .nav_toggle {
     font-size: 1.1rem;
     cursor: pointer;
